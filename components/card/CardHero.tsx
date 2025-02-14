@@ -11,7 +11,7 @@ const CardHero = () => {
     <Card className="border border-colorBackground-primary rounded-2xl bg-gradient-to-tl from-colorBackground from 100% to-colorBackground-primary to-80%">
       <CardHeader className="">
         <CardDescription className="font-roadRage text-[48px] lg:text-[62px] text-center text-colorBackground-foreground pt-5">
-          Techember Fest "25
+          Techember Fest 25
         </CardDescription>
       </CardHeader>
       <CardContent className="font-roboto text-[14px] md:text-[16px] font-normal text-colorBackground-foreground text-center lg:max-w-[55%] mx-auto">

@@ -8,7 +8,7 @@ const CardTicketTwo = () => {
       <Card className="border-[1px] border-colorBackground-hover rounded-2xl gradient2">
         <CardHeader className="">
           <CardDescription className="font-roadRage text-[48px] lg:text-[62px] text-center text-colorBackground-foreground pt-5">
-            Techember Fest "25
+            Techember Fest 25
           </CardDescription>
         </CardHeader>
         <CardContent className="font-roboto text-[14px] md:text-[16px] font-normal text-colorBackground-foreground text-center lg:max-w-[55%] mx-auto">

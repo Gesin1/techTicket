@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GenerateTicket from "./generateTicket/page";
 
 export default function Home() {

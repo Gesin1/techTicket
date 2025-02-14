@@ -42,7 +42,7 @@ const CardTicket = ({ value = "123456789" }) => {
       <Card className="absolute md:top-8 top-8 left-1/2 transform -translate-x-1/2 w-[80%]  border-[1px] border-colorBackground-hover rounded-2xl gradient2">
         <CardHeader className="">
           <CardDescription className="font-roadRage text-[34px]  text-center text-colorBackground-foreground pt-5 md:pt-10">
-            Techember Fest "25
+            Techember Fest 25
           </CardDescription>
         </CardHeader>
         <CardContent className="font-roboto text-[14px] md:text-[16px] font-normal text-colorBackground-foreground text-center lg:max-w-[90%] mx-auto px-3">
