@@ -1,11 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-} from "../ui/card";
-import Image from "next/image";
+import { Card, CardContent, CardDescription, CardHeader } from "../ui/card";
 import { Separator } from "../ui/separator";
 
 const CardTicketTwo = () => {
