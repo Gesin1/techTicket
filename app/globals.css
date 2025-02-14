@@ -2,20 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(at bottom, hsl(189, 69%, 14%), hsl(189, 87%, 6%));
+}
+.gradient {
+  background: radial-gradient(
+    ellipse 40% 20% at top,
+    hsl(189, 69%, 31%),
+    hsl(189, 80%, 14%)
+  );
+}
+
+.gradient2 {
+  background: radial-gradient(
+    ellipse 40% 20% at top,
+    hsl(189, 69%, 31%),
+    hsl(189, 80%, 14%)
+  );
+}
+
+/* .customclip {
+  -webkit-mask-image: radial-gradient(
+      circle at top left,
+      transparent 20px,
+      black 21px
+    ),
+    radial-gradient(circle at top right, transparent 20px, black 21px),
+    radial-gradient(circle at bottom left, transparent 20px, black 21px),
+    radial-gradient(circle at bottom right, transparent 20px, black 21px);
+  mask-image: radial-gradient(circle at top left, transparent 20px, black 21px),
+    radial-gradient(circle at top right, transparent 20px, black 21px),
+    radial-gradient(circle at bottom left, transparent 20px, black 21px),
+    radial-gradient(circle at bottom right, transparent 20px, black 21px);
+} */
+
+/* .corners {
+  clip-path: polygon(
+    1rem 0%,
+    calc(100% - 1rem) 0%,
+    100% 1rem,
+    100% calc(100% - 1rem),
+    calc(100% - 1rem) 100%,
+    1rem 100%,
+    0% calc(100% - 1rem),
+    0% 1rem
+  );
+} */
+
+/* .corners {
+  clip-path: circle(75%);
+} */
+
+.mask-cut-corners {
+  mask-image: radial-gradient(circle at left top, transparent 15px, black 15px),
+    radial-gradient(circle at right top, transparent 15px, black 15px),
+    radial-gradient(circle at right bottom, transparent 15px, black 15px),
+    radial-gradient(circle at left bottom, transparent 15px, black 15px);
+  mask-size: 51% 51%;
+  mask-position: left top, right top, right bottom, left bottom;
+  mask-repeat: no-repeat;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --backgroundColor: 189, 87%, 6%;
+    --card: 189, 80%, 14%;
+    --primary: 189, 80%, 14%;
+    --primary2: 191, 80%, 10%;
+    --secoundary: 189, 69%, 31%;
+    --hover: 189, 67%, 43%;
+    --accent: 223, 26%, 5%;
+    --foreground: 0, 0%, 98%;
+    --textsecoundary: 0, 0%, 70%;
+  }
 }
